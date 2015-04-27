@@ -1,0 +1,10 @@
+telnet use
+Cmd  Telnet 192.168.1.1 
+     User-root
+     Pass-telsimawl
+
+Telsima_ss#sh r
+
+Telsima_ss#configure no home-zone sector 00:00:00:20:06:02
+
+Telsima_ss#copy running-config startup-config
