@@ -1,0 +1,67 @@
+hi i had reliance wimax connection in bangalore provided with telsima starmax 2100 hardware.
+now am planning to configure the same hardware to tata indicom in bangalore.
+how can i do this?
+i already replaced the reliance scanner channels with tata indicom scanner channels,
+i am getting full signal but all scanner channels are showing status as NA. how can i get OPER insted of NA?
+after rebooting the router along with indicom scanner channels am getting old scanner chanels of reliance.
+apart from scanner channels is there any thing else i need to change to configure my router to tata indicom.
+ple help
+
+my current router settings with reliaance settings are as follows
+""
+configure ip ftp username root
+configure ip ftp password password
+configure user password root 6c684ee7e13a45ce6c
+configure user password support f85d86b51d5daf
+configure ntp server 128.250.36.2
+configure ip address 192.168.1.1 255.255.255.0
+configure interface phy LinkAdaptationDl automatic
+configure interface phy LinkAdaptationDl protection 2
+configure interface phy LinkAdaptationDl hysteresis 4
+configure interface phy link-adaptation alpha-filter
+configure interface phy link-adaptation switch-mode fch
+configure interface phy link-adaptation cinr-distribution hysteresis 1
+configure interface phy link-adaptation cinr-distribution protection 1
+configure interface phy link-adaptation cinr-distribution threshold 1
+configure interface phy link-adaptation cinr-distribution window 30
+configure interface phy link-adaptation cinr-distribution switch-mode fch
+configure dhcp-opt-50 disable
+configure snmp-server-community-ss public private
+configure snmp-server-community public ro
+configure snmp-server-community private rw
+configure beeper aat_done 1
+configure beeper mode 0
+configure home-zone enable
+configure nat global-address-mode static
+configure nat 1-N global-ip-address 0.0.0.0
+configure nat 1-N global-ip-netmask 0.0.0.0
+configure nat 1-N global-ip-gateway 0.0.0.0
+configure nat 1-N global-dns-ip-address 0.0.0.0
+configure nat dhcp-lease-time 24:0:0
+configure interface ethernet powerdownmode disable
+configure sub-channelization enable
+configure bcs cinr-avg-time 5
+configure bs connect_mode auto
+configure home-zone maxsectors 1
+configure bs add 3390000 3000 bs4
+configure bs add 3387000 3000 bs2
+configure bs add 3337000 3000 bs1
+configure bs add 3340000 3000 bs3
+configure bs add 3309000 3000 Freq7
+configure bs add 3312000 3000 Freq8
+configure bs add 3359000 3000 Freq9
+configure bs add 3362000 3000 Freq10
+
+""
+wat r the changes i need to make in the above configuration to convert it to indicom
+
+""
+indicom scanner channels i replaced with are
+
+bs1 3316000 3000
+bs2 3366000 3000
+bs3 3319000 3000
+bs4 3369000 3000
+
+
+please help

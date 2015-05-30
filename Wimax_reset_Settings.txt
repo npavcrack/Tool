@@ -1,0 +1,40 @@
+configure ip ftp username root
+configure ip ftp password password
+configure user password root 6c684ee7e13a45ce6c
+configure user password support f85d86b51d5daf
+configure ntp server 128.250.36.2
+configure ip address 192.168.1.1 255.255.255.0
+configure interface phy LinkAdaptationDl automatic
+configure interface phy LinkAdaptationDl protection 4.000000
+configure interface phy LinkAdaptationDl hysteresis 2.000000
+configure interface phy link-adaptation alpha-filter
+configure interface phy link-adaptation switch-mode fch
+configure interface phy link-adaptation cinr-distribution hysteresis 1
+configure interface phy link-adaptation cinr-distribution protection 1
+configure interface phy link-adaptation cinr-distribution threshold 1
+configure interface phy link-adaptation cinr-distribution window 30
+configure interface phy link-adaptation cinr-distribution switch-mode fch
+configure dhcp-opt-50 enable
+configure dhcp-opt-50 ipaddress 172.17.111.201
+configure snmp-server-community-ss public private
+configure snmp-server-community public ro
+configure snmp-server-community private rw
+configure beeper aat_done 1
+configure beeper mode 1
+configure home-zone enable
+configure nat global-address-mode static
+configure nat 1-N global-ip-address 0.0.0.0
+configure nat 1-N global-ip-netmask 0.0.0.0
+configure nat 1-N global-ip-gateway 0.0.0.0
+configure nat 1-N global-dns-ip-address 0.0.0.0
+configure nat dhcp-lease-time 24:0:0
+configure interface ethernet powerdownmode disable
+configure sub-channelization enable
+configure bcs cinr-avg-time 5
+configure bs connect_mode auto
+configure home-zone maxsectors 1
+configure bs add 3390000 3000 bs4
+configure bs add 3387000 3000 bs2
+configure bs add 3337000 3000 bs1
+configure bs add 3340000 3000 bs3
+
