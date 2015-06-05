@@ -2,3 +2,4 @@ F0:7D:68:18:8C:6E Pc
 BC:D1:D3:00:3A:76 Rohit
 00:73:8D:83:85:D0 Mom
 BC:D1:D3:12:C8:B6 Sharu
+00:15:6D:16:23:CF Nanostation
